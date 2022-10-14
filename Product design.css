@@ -1,0 +1,122 @@
+.Main {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;   
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+.img-container {
+    width: 250px;
+}
+
+.product-img {
+    width: inherit;
+    height: inherit;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+.text-container {
+    padding: 20px 30px;
+}
+
+
+
+
+.product-decription {
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    gap: 21px;
+    width: 210px;
+}
+
+
+.Product-category {
+    font-family: 'Montserrat', Arial;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(145, 145, 145);
+}
+
+
+.french {
+    font-family: 'Fraunces', Arial; 
+    font-size: 25px;
+    line-height: 31px;
+}
+
+
+.description-perfume {
+    font-size: 13px;
+    font-family: 'Montserrat', Arial;
+    font-weight: 500;
+    color: rgb(145, 145, 145);
+}
+
+.Price-tags {
+    display: flex;
+    align-items: center;
+}
+
+.p1 {
+    text-align: center;
+    color: rgba(53, 117, 53, 0.821);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Fraunces', Arial; 
+}
+.p2 {
+    flex: 1;
+    padding-left: 10px;
+    text-decoration: line-through;
+    color: rgb(160, 160, 160);
+    font-size: 13px;
+    font-family: 'Montserrat', Arial;
+}
+
+.Add-to-cart {
+    background-color: rgba(53, 117, 53, 0.821);
+    padding: 15px 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    font-family: 'Montserrat', Arial;
+    color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;    
+}
+
+.Add-to-cart:active {
+    background-color: rgba(26, 60, 26, 0.821);
+}
+
+.cart-icon {
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 535px) {
+    .Main {
+        flex-direction: column;
+    }
+    .product-img {
+        width: 340px;
+        height: 270px;
+        object-fit: cover;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .product-decription {
+        width: 280px;
+    }
+}
